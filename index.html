@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>color picker for image</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/color-namer@1.1.0/dist/color-namer.min.js"></script>
+  </head>
+  <body>
+    <section class="mainSection">
+      <form action="">
+        <div class="fileContainer">
+          <input
+            type="button"
+            value="choose the color"
+            id="selectColor"
+            placeholder="pick color"
+            onclick="choosingColor()"
+          />
+          <input type="file" id="selectFile" onchange="choosingFile(event)" />
+        </div>
+      </form>
+      <div class="imageContainer">
+        <p id="pickedColor"></p>
+        <img
+          src=""
+          style="max-width: 80vw"
+          alt=""
+          id="selectedImageFile"
+          onclick="choosingFile()"
+        />
+      </div>
+      <script src="./app.js"></script>
+    </section>
+  </body>
+</html>
